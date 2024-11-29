@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans&display=swap');
+body{
+    font-family:  "Parkinsans", sans-serif !important;
+    background-image: url(imagenes/fondo.png);
+    background-size: cover;
+    
+}
+
+header, section, footer{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#cabecera{
+    height: 400px;
+    width: auto;
+    position: relative;
+    
+}
+#entrada{
+    width: 50%;
+    height: 150px;
+    position: absolute;
+    top: 0; right: 50%; bottom: 0; margin: auto; left: 0;
+    padding: 10px;
+    
+    
+}
+h1{
+    margin-bottom: 0%;
+    margin-left: 10%;
+    margin-top: 0;
+  
+}
+h1 span{
+color: #F96E2A;
+
+}
+h2{
+    margin-left: 13%;
+    font-size: 20px;
+    margin-top: 0%;
+}
+h2 span{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #F96E2A;
+}
+.aboutme p{
+    font-weight: bold;
+}
+.aboutme h3{
+    color: #F96E2A;
+}
+
+#botonera{
+    width: auto;
+    height:auto ;
+    float: right;
+    position: fixed;
+    background-color: #FBF8EF;
+    opacity: 0.8;
+    border-radius: 5px;
+   
+}
+.botones {
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.botones li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color:#78B3CE;
+    padding: 10px;
+    margin: 10px ;
+    border-radius: 20px;
+    border: 2px #78B3CE solid;
+    text-transform: uppercase;
+    
+}
+.botones li a:hover{
+    background-color:#F96E2A ;
+    color: #FBF8EF;
+    border: 2px #F96E2A solid;
+}
+#links{
+    width: 400px;
+    height: 30%;
+    position:absolute;
+    top: 0; right: 0; bottom: 0; margin: auto; left: 50%;
+    padding: 5px;
+    background-size: cover;
+   
+}
+#email{
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    color:#F96E2A
+}
+#email:hover{
+    color: #78B3CE;
+    font-size: larger;
+    
+}
+.btn_links{
+    margin: 10px;
+    padding: 0;
+    width: 40%;
+    height: 40%;
+    
+    list-style: none;
+    display: flex;
+}
+.btn_links ul li{
+    display: inline;
+    
+}
+.btn_links li a {
+    display: block;
+    margin-left: 30%;
+    
+}
+.max{
+    width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+#sobremi{
+    height:350px;
+}
+.aboutme{
+    width: 35%;
+    height: auto;
+    float: left;
+    margin-top: 5%;
+    margin-left: 10%;
+    text-align: center;
+    padding: 20px;
+}
+#educacion{
+    height:500px;
+    
+} 
+.educacion_cont{
+ 
+    width: 20%;
+    height: 80%;
+    float: left;
+    margin-top: 5%;
+    margin-left: 5%;
+    padding: 10px;
+ }
+ .educacion_cont h3{
+    color: #F96E2A;
+ }
+ .educacion_cont p {
+    color: #78B3CE;
+    font-weight: bold;
+ }
+ 
+#proyectos{
+    height: 600px;
+    
+}
+.proyectos_cont{
+    width: auto;
+    height:auto;
+    float: left;
+    margin-top: 10%;
+    margin-left: 8%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.card-body{
+    background-color: #e9fbff ;
+    
+}
+.card-title{
+    font-weight: bold;
+}
+.card-text{
+    color: #F96E2A;
+    font-weight: bold;
+}
+#contacto{
+    height: 200px;
+    position: relative;
+}
+#contactame{
+    width: 30%;
+    height: 30%;
+    position:absolute;
+    top: 0; right: 0; bottom: 0; margin: auto; left: 10%;
+    padding: 10px;
+    background-size: cover;
+
+}
+.ocultar{
+    display: none
+}
+
+@media all and (min-width: 600px) and (max-width: 1200px) {
+    header, section, footer{
+        width: 600px;  
+    }
+    #cabecera{
+       display: block;
+        width: 100%;
+    }
+    #entrada{
+        width: 100%;
+        height: auto;
+        margin-top: 150px;
+    }
+    #links{
+        
+        top: 250px; right: 0; bottom: 0; margin: auto; left: 0;
+        
+    }
+    #sobremi{
+        height:auto;
+    }
+    .aboutme{
+        width: 100%;
+        float: none;
+        margin-left: 0;
+    }
+    #proyectos{
+        height: auto;
+       align-items: center;
+      
+    }
+    .proyectos_cont{
+        float: none;
+
+    }
+    #educacion{
+        height:auto;
+        display: grid;  
+        grid-template-columns: repeat(2, 300px);   
+        grid-template-rows: repeat(2, 300px); 
+       gap: 10px; 
+      
+    } 
+    .educacion_cont{
+        margin-left: 5px;
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+     
+     #contactame{
+        width: 60%;
+        top: 0; right: 0; bottom: 0; margin: auto; left: 0;
+       
+    }  
+    .btn_links  {
+       align-items: center;
+    } 
+}
+
+@media all and (max-width: 599px) {
+    header, section, footer{
+        width: 100%;
+    }
+    #cabecera{
+        display: block;
+        width: 100%;
+     }
+     #botonera{
+        width: 100%;
+        height:auto ;
+        float: none;
+        position: absolute;
+    }
+    .botones li a{
+        padding: 5px;
+        margin-bottom: 5px ; 
+        box-sizing: border-box;
+        
+    }
+    .botones{
+        display: block;
+    }
+     #entrada{
+         width: 100%;
+         height: auto;
+         margin-top: 200px;
+     }
+     #links{
+         
+        top: 350px; right: 0; bottom: 0; margin: auto; left: 0;
+         
+     }
+     #sobremi{
+         height:auto;
+     }
+     .aboutme{
+         width: 100%;
+         float: none;
+         margin-left: 0;
+     }
+     #proyectos{
+         height: auto;
+        align-items: center;
+       
+     }
+     .proyectos_cont{
+         float: none;
+ 
+     }
+     #educacion{
+         height:auto;
+     } 
+     .educacion_cont{
+         margin-left: 5px;
+         width: 100%;
+         height: auto;
+         float: none;
+     }
+      
+      #contactame{
+         width: 100%;
+         top: 0; right: 0; bottom: 0; margin: auto; left: 0;
+        
+     }  
+     .btn_links  {
+        align-items: center;
+     } 
+}
